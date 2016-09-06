@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">punto3</string>
+    <string name="cua">cuadrado</string>
+    <string name="tri">triangulo</string>
+    <string name="rec">rectangulo</string>
+    <string name="cir">circulo</string>
+</resources>

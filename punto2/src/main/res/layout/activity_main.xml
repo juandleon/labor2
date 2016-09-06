@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue"
+    tools:context="com.example.punto2.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/num1"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:inputType="number"
+        android:id="@+id/no1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/num2"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:inputType="number"
+        android:id="@+id/no2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resultado"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:id="@+id/result"
+        android:layout_weight="0.25" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RadioButton
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:text="@string/sum"
+                android:textSize="30sp"
+                android:checked="true"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="20sp"
+                 android:id="@+id/suma"
+                android:layout_weight="0.10" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:text="@string/res"
+                 android:textSize="30sp"
+                 android:checked="true"
+                android:layout_marginLeft="30sp"
+                 android:layout_marginTop="20sp"
+                 android:id="@+id/resta"
+                android:layout_weight="0.10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mul"
+                android:textSize="30sp"
+                android:layout_marginLeft="60sp"
+                android:checked="true"
+                android:layout_marginTop="20sp"
+
+                android:id="@+id/multi"
+                android:layout_weight="0.10" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/div"
+                android:textSize="30sp"
+                android:checked="true"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="20sp"
+                android:id="@+id/division"
+                android:layout_weight="0.10" />
+            </LinearLayout>
+        </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/calcular"
+                android:text="@string/calcular"
+                android:textSize="25dp"
+                 />
+
+
+</LinearLayout>
